@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED (VERSION 3.10.0)
 
 include(${CMAKE_CURRENT_LIST_DIR}/tools/cmake_toolchain_files/utils.cmake)
 
-mcux_import_kconfig(${CMAKE_CURRENT_LIST_DIR}/.config)
+mcux_import_kconfig(${CMAKE_CURRENT_SOURCE_DIR}/.config)
 
 if(NOT DEFINED MCUX_DEVICE)
   message(FATAL_ERROR "MCUX_DEVICE is not defined")
